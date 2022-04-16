@@ -1,0 +1,123 @@
+$primary-color: $color-blue;
+$ball-size: 15px !default;
+$margin: 2px !default;
+$line-height: 35px !default;
+$line-width: 4px !default;
+
+@mixin global-bg() {
+  background-color: $primary-color;
+}
+
+@mixin global-animation() {
+  animation-fill-mode: both;
+}
+
+@mixin balls() {
+  @include global-bg();
+
+  width: $ball-size;
+  height: $ball-size;
+  border-radius: 100%;
+  margin: $margin;
+}
+
+@mixin lines() {
+  @include global-bg();
+
+  width: $line-width;
+  height: $line-height;
+  border-radius: 2px;
+  margin: $margin;
+}
+
+@keyframes ball-beat {
+  50% {
+    opacity: 0.2;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.ball-beat {
+  position: relative;
+  display: flex;
+  > div {
+    @include balls();
+    @include global-animation();
+
+    display: inline-block;
+    animation: ball-beat 0.7s 0s infinite linear;
+
+    &:nth-child(2n-1) {
+      animation-delay: -0.35s !important;
+    }
+  }
+}
+
+
+.fade-enter-active {
+  animation: fadeIn .3s ease-in-out both;
+}
+.fade-leave-active {
+  animation: fadeOut .3s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.move-up-enter-active {
+  animation: moveUpIn .3s ease-in-out both;
+}
+.move-up-leave-active {
+  animation: moveUpOut .3s ease-in-out both;
+}
+
+@keyframes moveUpIn {
+  0% {
+    opacity: 0;
+    transform-origin: 0 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 0 0;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveUpOut {
+  0% {
+    opacity: 1;
+    transform-origin: 0 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 0 0;
+    transform: translateY(-100%);
+  }
+}

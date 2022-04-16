@@ -1,0 +1,51 @@
+.dropdown {
+	display: inline-block;
+	position: relative;
+	&-inner {
+		position: absolute;
+		bottom: 0;
+		min-width: 200px;
+		height: 0;
+	}
+	&-menu {
+		z-index: $z-index-select;
+		width: 100%;
+		border-radius: 2px;
+		position: absolute;
+		right: 0px;
+		padding: 5px;
+		margin-top: 5px;
+		box-shadow: 0 1px 6px rgba(0,0,0,.2);
+		background: $color-white;
+	}
+	&-item {
+		cursor: pointer;
+		padding: 7px 10px;
+		&:hover {
+			background: #fafafa;
+		}
+		a {
+			display: block;
+			width: 100%;
+		}
+	}
+	&-link {
+		color: $text-color;
+		display: block;
+		cursor: pointer;
+		padding: 7px 10px;
+		&:hover {
+			background: #fafafa;
+		}
+	}
+	&-divide {
+		margin: 10px 0px;
+		border-top: 1px solid $border-color-light;
+	}
+	&-right {
+		right: 0;
+	}
+	&-left {
+		left: 0;
+	}
+}

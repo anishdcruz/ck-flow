@@ -1,0 +1,100 @@
+.settings {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	&-content {
+		// background: #fff;
+		width: 100%;
+		position: relative;
+		padding: 8px;
+		height: 100%;
+		overflow-y: scroll;
+	}
+	&-inner {
+		width: 78%;
+		position: relative;
+		height: 100%;
+		overflow-y: scroll;
+	}
+	&-block-header {
+		background: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid rgba(0, 0, 0, .02);
+		padding: 5px;
+	}
+	&-block {
+		display: flex;
+		flex-direction: column;
+		width: 75%;
+		position: relative;
+		height: 100%;
+		overflow-y: scroll;
+	}
+	&-sidebar {
+		width: 22%;
+	    border-left: 2px solid rgba(0, 0, 0, .1);
+	    border-right: 1px solid rgba(0, 0, 0, .02);
+	    &-inner {
+	        background: #fff;
+	        height: 100%;
+	        overflow-y: scroll;
+	        padding: 15px;
+	    }
+	}
+	&-list {
+	    padding: 0;
+	    margin: 0 0 0 0;
+	    li {
+	        display: block;
+	    }
+	}
+	&-text {
+	    flex: 6;
+	}
+	&-icon2 {
+	    flex: 0.5;
+	    text-align: right;
+	}
+	&-title {
+	    margin: 7px;
+	    font-size: 18px;
+	    line-height: 18px;
+	    font-weight: normal;
+	    display: block;
+	    // margin-bottom: 15px;
+	}
+	&-no {
+		padding: 7px;
+	}
+	&-control {
+		padding: 7px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		strong {
+			text-transform: uppercase;
+		}
+	}
+	&-link {
+	    display: flex;
+	    align-items: center;
+	    flex-wrap: wrap;
+	    padding: 7px;
+	    outline: none;
+	    &:hover {
+	        background: #fafafa;
+	    }
+	}
+	&-break {
+        // background: red;
+        // height: 1px;
+        padding: 10px 10px 10px 10px;
+    }
+    &-drag {
+    	margin-right: 10px;
+    	cursor: move;
+    }
+}

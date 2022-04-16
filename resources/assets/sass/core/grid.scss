@@ -1,0 +1,88 @@
+$gutter-width: 16px;
+$outer-margin: 24px;
+$half-gutter-width: $gutter-width * 0.5;
+
+// 24 col grid
+
+$base-width: 4.166%;
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: $half-gutter-width * -1;
+  margin-right: $half-gutter-width * -1;
+}
+
+.row-no-gutter {
+  	margin-left: 0;
+  	margin-right: 0;
+}
+
+@for $i from 1 through 24 {
+  .col-#{$i} {
+  	flex-grow: 1;
+    flex-basis: $base-width * $i;
+    max-width: $base-width * $i;
+    padding-left: $half-gutter-width;
+    padding-right: $half-gutter-width;
+    .row-no-gutter & {
+      	padding-left: 0;
+      	padding-right: 0;
+    }
+  }
+  .col-offset-#{$i} {
+    margin-left: $base-width * $i;
+    .row-no-gutter & {
+      	padding-left: 0;
+      	padding-right: 0;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-top {
+  align-items: flex-start;
+}
+
+.flex-middle {
+  align-items: center;
+}
+
+.flex-bottom {
+  align-items: flex-end;
+}
+
+.flex-first {
+  order: -1;
+}
+
+.flex-last {
+  order: 1;
+}

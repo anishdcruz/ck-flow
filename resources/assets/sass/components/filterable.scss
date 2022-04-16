@@ -1,0 +1,114 @@
+.filterable {
+	&-mid {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 0px;
+	}
+	&-sort {
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 200px;
+	}
+	&-direction {
+		color: $color-blue;
+	}
+}
+
+.filters {
+    &-item {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: start;
+        position: relative;
+    }
+    &-column {
+        padding-right: 15px;
+        width: 25%;
+    }
+    &-operator {
+        padding-right: 15px;
+        width: 25%;
+    }
+    &-query_1 {
+        width: 23%;
+        padding-right: 15px;
+    }
+    &-full {
+        width: 46%;
+    }
+    &-date {
+        display: flex;
+    }
+    &-query_2 {
+        width: 23%;
+    }
+    &-remove-wrap {
+        width: 4%;
+        text-align: right;
+    }
+    &-control {
+        &-item {
+            display: inline-block;
+            position: relative;
+            margin-left: 7px;
+            &-line {
+                z-index: 2;
+                // background: red;
+                background: #efefef;
+                position: absolute;
+                bottom: 10px;
+                left: -10px;
+                height: 2px;
+                width: 10px;
+            }
+        }
+    }
+    &-remove {
+        display: inline-block;
+        color: $color-red;
+        background: transparent;
+        border: none;
+        padding: 6px;
+        &:focus {
+            outline-style: dotted;
+            outline-width: 1px;
+            outline-offset: 1px;
+            outline-color: $color-blue;
+        }
+        &:active {
+            box-shadow: inset $box-shadow;
+        }
+    }
+    &-title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    &-export {
+        margin-bottom: 16px;
+        align-items: center;
+    }
+    &-columns {
+        margin-left: 8px;
+        width: 130px;
+    }
+    &-direction {
+        cursor: pointer;
+        margin-left: 8px;
+        padding: 0px 4px;
+        color: $color-blue;
+    }
+    &-line {
+        background: #efefef;
+        position: absolute;
+        bottom: -10px;
+        left: 10px;
+        height: 10px;
+        width: 2px;
+    }
+}
+.filter-toggle {
+    height: 32px;
+    display: flex;
+    align-items: center;
+}

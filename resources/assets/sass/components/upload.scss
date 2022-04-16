@@ -1,0 +1,23 @@
+.upload {
+	height: 300px;
+	overflow-y: scroll;
+	&-item {
+		margin-bottom: 10px;
+	}
+	&-inner {
+		border-radius: 3px;
+		border: 1px dashed #EDECE4;
+		background: #F9F8F5;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&-icon {
+		font-size: 60px;
+	}
+	&-text {
+		margin: 20px 0;
+	}
+}

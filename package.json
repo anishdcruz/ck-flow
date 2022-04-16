@@ -1,0 +1,34 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "cross-env": "^5.1",
+        "laravel-mix": "^2.0",
+        "lodash": "^4.17.4",
+        "webpack-shell-plugin": "^0.5.0"
+    },
+    "dependencies": {
+        "@dymantic/vue-trix-editor": "^0.1.6",
+        "@tinymce/tinymce-vue": "^1.1.0",
+        "axios": "^0.18.0",
+        "chart.js": "^2.7.2",
+        "clipboard-polyfill": "^2.5.4",
+        "date-fns": "^1.29.0",
+        "laue": "^0.1.1",
+        "vue": "^2.5.15",
+        "vue-codemirror": "^4.0.5",
+        "vue-quill-editor": "^3.0.6",
+        "vue-router": "^3.0.1",
+        "vue-template-compiler": "^2.5.15",
+        "vue-trix": "^0.3.3",
+        "vuedraggable": "^2.16.0"
+    }
+}

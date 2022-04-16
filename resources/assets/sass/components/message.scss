@@ -1,0 +1,53 @@
+.message {
+	&-container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+	&-inner {
+		text-align: center;
+		transition: opacity .3s, transform .3s, top .4s;
+	}
+	&-wrap {
+		margin-top: 5px;
+	}
+	&-item {
+		display: inline-block;
+		padding: 6px 15px;
+		line-height: 1.5;
+		border-radius: 2px;
+		background-color: $color-white;
+		box-shadow: 0 1px 8px rgba(0, 0, 0, .15);
+		min-width: 200px;
+	}
+	&-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-icon {
+	    padding-right: 8px;
+	}
+
+	&-close {
+		color: $color-label;
+	    padding-left: 8px;
+	    cursor: pointer;
+	}
+
+	&-success .message-icon {
+	  color: $color-green;
+	}
+	&-error .message-icon {
+	  color: $color-red;
+	}
+	&-warning .message-icon {
+	  color: $color-yellow;
+	}
+	&-info .message-icon {
+	  color: $color-blue;
+	}
+}

@@ -1,0 +1,39 @@
+.sidebar {
+	width: 17%;
+	padding-top: 15px;
+	background: $sidebar-color;
+	&-inner {
+		height: 100%;
+		overflow-y: scroll;
+		width: 100%;
+	}
+	&-link {
+		width: 100%;
+		padding: 7px 15px;
+		color: darken(#f5ede5, 5%);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		&:hover {
+			background: #272d46;
+		}
+	}
+
+	&-icon {
+		width: 15%;
+
+		color: darken(#f5ede5, 5%);
+	}
+	&-text {
+		width: 75%;
+	}
+	&-arrow {
+		text-align: right;
+		width: 10%;
+		color: darken(#f5ede5, 5%);
+	}
+	&-break {
+		// background: red;
+		padding: 6px;
+	}
+}

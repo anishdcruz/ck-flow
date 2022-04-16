@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+input::-ms-clear, input::-ms-reveal {
+  display: none;
+}
+
+::selection {
+  background: $color-blue;
+  color: $color-white;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: $bg-color;
+	color: $text-color;
+	font-family: $font-family;
+	font-size: $font-size-base;
+	line-height: $line-height;
+	-webkit-font-smoothing: antialiased;
+}
+
+button, input, select, textarea, pre {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}

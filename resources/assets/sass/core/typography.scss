@@ -1,0 +1,77 @@
+h1 {
+	fonts-size: 20px;
+	line-height: 25px;
+	margin: 0;
+}
+
+h2 {
+	fonts-size: 18px;
+	line-height: 22px;
+	margin: 0;
+}
+
+h3 {
+	fonts-size: 15px;
+	line-height: 19px;
+	margin: 0;
+}
+
+h4 {
+	fonts-size: 13px;
+	line-height: 16px;
+	margin: 0;
+}
+
+h5 {
+	fonts-size: 12px;
+	line-height: 15px;
+	margin: 0;
+}
+
+h6 {
+	fonts-size: 11px;
+	line-height: 14px;
+	margin: 0;
+}
+
+a {
+	color: $link-color;
+	background: transparent;
+	text-decoration: none;
+	cursor: pointer;
+	&:focus {
+	  	outline-style: dotted;
+	  	outline-width: 1px;
+	}
+	&:hover, &:active {
+	  	text-decoration: none;
+	}
+
+	&[disabled] {
+	 	color: $color-grey;
+	 	cursor: not-allowed;
+	 	pointer-events: none;
+	}
+}
+
+p {
+	margin: 0;
+}
+
+pre {
+	font-size: inherit;
+	background: transparent;
+	padding: 0;
+  	margin: 0;
+  	vertical-align: top;
+  	display: block;
+  	white-space: pre-wrap;
+  	word-wrap: break-word;
+}
+
+hr {
+	background: none;
+	border: none;
+	border-top: 1px solid $border-color-light;
+	margin: 15px 0;
+}

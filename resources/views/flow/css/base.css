@@ -1,0 +1,117 @@
+.w-1 {
+  width: 4.166667%;
+}
+
+.w-2 {
+  width: 8.333334%;
+}
+
+.w-3 {
+  width: 12.500001%;
+}
+
+.w-4 {
+  width: 16.666668%;
+}
+
+.w-5 {
+  width: 20.833335%;
+}
+
+.w-6 {
+  width: 25.000002%;
+}
+
+.w-7 {
+  width: 29.166669%;
+}
+
+.w-8 {
+  width: 33.333336%;
+}
+
+.w-9 {
+  width: 37.500003%;
+}
+
+.w-10 {
+  width: 41.66667%;
+}
+
+.w-11 {
+  width: 45.833337%;
+}
+
+.w-12 {
+  width: 50.000004%;
+}
+
+.w-13 {
+  width: 54.166671%;
+}
+
+.w-14 {
+  width: 58.333338%;
+}
+
+.w-15 {
+  width: 62.500005%;
+}
+
+.w-16 {
+  width: 66.666672%;
+}
+
+.w-17 {
+  width: 70.833339%;
+}
+
+.w-18 {
+  width: 75.000006%;
+}
+
+.w-19 {
+  width: 79.166673%;
+}
+
+.w-20 {
+  width: 83.33334%;
+}
+
+.w-21 {
+  width: 87.500007%;
+}
+
+.w-22 {
+  width: 91.666674%;
+}
+
+.w-23 {
+  width: 95.833341%;
+}
+
+.w-24 {
+  width: 100.000008%;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  vertical-align: top;
+}
+
+.t-img {
+  display: block;
+  max-width: 100%;
+}

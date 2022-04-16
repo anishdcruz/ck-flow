@@ -1,0 +1,39 @@
+.panel {
+	background: $color-white;
+	border-radius: 2px;
+	box-shadow: $box-shadow;
+
+	&-heading {
+		padding: 8px 15px;
+		// border-bottom: 1px solid $border-color-light;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-title {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	&-body {
+		padding: 8px 15px;
+		border-top: 1px solid $border-color-light;
+	}
+	&-form {
+		padding: 0px 8px;
+	}
+	&-footer {
+		padding: 8px 15px;
+		border-top: 1px solid $border-color-light;
+	}
+	&-margin {
+		margin-bottom: 15px;
+	}
+	&-alt {
+		background: $bg-color-base;
+	}
+	&-empty {
+		display: block;
+		text-align: center;
+		margin: 25px 0;
+	}
+}

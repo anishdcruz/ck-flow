@@ -1,0 +1,139 @@
+.template {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	&-content {
+		width: 100%;
+		position: relative;
+		padding: 8px;
+		height: 100%;
+		overflow-y: scroll;
+	}
+	&-block {
+		display: flex;
+		flex-direction: column;
+		width: 75%;
+		position: relative;
+		height: 100%;
+		overflow-y: scroll;
+	}
+	&-sidebar {
+	    width: 25%;
+	    border-left: 2px solid #E1E3E8;
+	    border-right: 1px solid #E1E3E8;
+	    &-inner {
+	        background: #F4F5F7;
+	        height: 100%;
+	        overflow-y: scroll;
+	        padding: 15px;
+	    }
+	}
+
+	&-list {
+	    padding: 0;
+	    margin: 0 0 0 0;
+	    li {
+	        display: block;
+	    }
+	}
+	&-text {
+	    flex: 6;
+
+	}
+	&-icon {
+	    flex: 0.5;
+	    padding-right: 6px;
+	    text-align: left;
+	}
+	&-control {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #eceef1;
+	}
+	&-link {
+		border-radius: 2px;
+	    display: flex;
+	    align-items: center;
+	    padding: 7px;
+	    outline: none;
+	    cursor: move;
+	    &:hover {
+	        background: #fafafa;
+	    }
+	}
+	&-break {
+        padding: 7px;
+    }
+    &-block-header {
+		background: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid #E1E3E8;
+		padding: 5px 10px;
+	}
+	&-title {
+	    margin: 7px;
+	    font-size: 18px;
+	    line-height: 18px;
+	    font-weight: normal;
+	}
+	&-active {
+		background: #EAECF0;
+		color: $text-color;
+	}
+	&-preview {
+		height: 800px;
+	}
+}
+
+.column-list {
+	background: #F4F5F7;
+	padding: 10px;
+	min-height: 305px;
+	margin: 0;
+	li {
+		display: block;
+	}
+}
+
+.column {
+	&-active {
+		background: #EAECF0;
+		color: $text-color;
+	}
+	&-text {
+	    flex: 6;
+	}
+	&-icon {
+	    flex: 0.5;
+	    padding-right: 6px;
+	    text-align: left;
+	}
+	&-link {
+		border-radius: 2px;
+	    display: flex;
+	    align-items: center;
+	    padding: 5px 7px;
+	    outline: none;
+	    &:hover {
+	        background: #fafafa;
+	    }
+	}
+	&-control {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #eceef1;
+	}
+	&-remove {
+		color: $color-red;
+		cursor: pointer;
+	}
+}

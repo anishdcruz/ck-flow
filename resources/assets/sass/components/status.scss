@@ -1,0 +1,102 @@
+.status {
+	display: inline-block;
+	padding: 2px 6px;
+	color: $text-color;
+	font-size: 0;
+	line-height: 1.2em;
+	text-align: center;
+	white-space: nowrap;
+	border-radius: 4px;
+	background: $bg-color;
+	outline: 0;
+	&-text {
+		color: #fff;
+		text-transform: uppercase;
+	 	font-size: 10px;
+	  	line-height: 11px;
+	}
+}
+
+.status-new, .status-open {
+	background: $blue;
+}
+
+.status-contacted {
+	background: $yellow;
+}
+
+.status-attempted_to_contact {
+	background: $blue_grey;
+}
+
+.status-qualified, .status-won {
+	background: $green;
+}
+
+.status-disqualified, .status-lost {
+	background: $red;
+}
+
+
+.status {
+	&-red {
+		background: $red;
+	}
+	&-indigo {
+		background: $indigo;
+	}
+	&-teal {
+		background: $teal;
+	}
+	&-yellow {
+		background: $yellow;
+	}
+	&-grey {
+		background: $grey;
+	}
+	&-pink {
+		background: $pink;
+	}
+	&-blue {
+		background: $blue;
+	}
+	&-green {
+		background: $green;
+	}
+	&-amber {
+		background: $amber;
+	}
+	&-blue_grey {
+		background: $blue_grey;
+	}
+	&-purple {
+		background: $purple;
+	}
+	&-light_blue {
+		background: $light_blue;
+	}
+	&-light_green {
+		background: $light_green;
+	}
+	&-orange {
+		background: $orange;
+	}
+	&-lemon_grass {
+		background: $lemon_grass;
+	}
+	&-deep_purple {
+		background: $deep_purple;
+	}
+	&-cyan {
+		background: $cyan;
+	}
+	&-lime {
+		background: $lime;
+	}
+	&-deep_orange {
+		background: $deep_orange;
+	}
+	&-brown {
+		background: $brown;
+	}
+}
